@@ -1,0 +1,300 @@
+/* Basic styling for navigation */
+#ds {
+  padding-bottom: 15px;
+  color: #FFCB05;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between links */
+
+}
+
+
+nav a {
+    text-decoration: none;
+    color: burlywood; /* Link color */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style on hover */
+nav a:hover {
+    color: #ff6600; /* Change color on hover */
+}
+
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFCC00;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    /* Add styles for navigation if needed */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+article {
+    flex: 2;
+    background-color: #FFCC00;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+pre {
+  background-color: #f4f4f4;
+  padding: 20px;
+
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Add border and border color for pre element */
+pre {
+  border: 3px solid black;
+  border-color: black;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  display: block;
+  white-space: pre;
+}
+
+
+/* @media query here*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    .main-content {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Navigation styles for smaller screens */
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 10px; /* Adjust spacing between navigation items */
+    }
+
+    nav a {
+        text-decoration: none;
+        color: burlywood;
+        font-size: 16px;
+    }
+
+    /* Adjusting font sizes for smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+        
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+  pre {
+    /* Adjust styles for extra small devices */
+    border-radius: 3px;
+    overflow-x: auto;
+    border: 3px solid black; /* Add border */
+    border-color: black; /* Border color */
+    /* Retain existing styles */
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: auto; /* Change height for visibility */
+
+  }
+
+code {
+  font-size: 14px;
+  font-weight: bold; /* Adding font-weight */
+}
+    /* Additional styles specific for smaller screens */
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Adjusting font sizes for small devices */
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    /* Navigation styles for small devices */
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 15px; /* Adjust spacing between navigation items */
+    }
+
+    nav a {
+        text-decoration: none;
+        color: burlywood;
+        font-size: 16px;
+    }
+
+    
+  pre {
+    /* Adjust styles for small devices and larger */
+    border-radius: 5px;
+    overflow-x: auto;
+    border: 3px solid black; /* Add border */
+    border-color: black; /* Border color */
+    /* Retain existing styles */
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: auto; /* Change height for visibility */
+
+  }
+
+code {
+  font-size: 16px;
+  font-weight: bold; /* Adding font-weight */
+}
+
+
+    /* Additional styles specific for small devices */
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Add styles for larger screens here */
+    body {
+        font-size: 16px; /* Example font size */
+    }
+
+    /* Additional styles for larger screens */
+    .container {
+        width: 80%; /* Example container width */
+        margin: 0 auto; /* Center the container */
+    }
+
+    /* You can add more styles as needed */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Set font size for extra-large screens */
+    body {
+        font-size: 20px; /* Example font size for extra-large screens */
+    }
+
+    /* Additional styles for extra-large screens */
+    /* Add more styles as needed */
+}
+
+/* High-resolution devices, higher than 1440px */
+@media only screen and (min-width: 1440px) {
+    /* Set font size for very high-resolution screens */
+    body {
+        font-size: 22px; /* Example font size for high-resolution screens */
+    }
+
+    /* Additional styles for very high-resolution screens */
+    /* Add more styles as needed */
+}
+
+/* Very high-resolution devices, higher than 1920px */
+@media only screen and (min-width: 1920px) {
+    /* Set font size for extremely high-resolution screens */
+    body {
+        font-size: 24px; /* Example font size for very high-resolution screens */
+    }
+
+    /* Additional styles for extremely high-resolution screens */
+    /* Add more styles as needed */
+}
